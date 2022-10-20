@@ -3,16 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/charts": "^1.4.2",
+    "@ant-design/plots": "^1.2.2",
+    "@craco/craco": "^6.4.5",
     "@reduxjs/toolkit": "^1.8.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.11.66",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
+    "antd": "^4.23.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-charts": "^4.0.0",
     "react-redux": "^8.0.4",
     "react-router": "^6.4.2",
     "react-router-dom": "^6.4.2",
@@ -21,9 +22,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,5 +44,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.66",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "craco-less": "^2.0.0"
   }
 }

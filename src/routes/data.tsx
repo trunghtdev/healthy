@@ -6,6 +6,10 @@ export type TypeRoute = RouteProps & { Component?: any }
 export const routes: TypeRoute[] = [
   {
     path: '/',
-    Component: lazy(() => import(`./home`))
+    Component: lazy(() => import(`./home`)),
+  },
+  {
+    path: '/record',
+    Component: lazy(() => import(`./record`))
   }
 ]

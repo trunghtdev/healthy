@@ -13,7 +13,7 @@ const AppRoutes = () => {
         {routes.map(({ Component, ...route }) => {
           return (
             <Route 
-              {...route} 
+              {...route}
               key={route.path} 
               element={<Component />} 
             />

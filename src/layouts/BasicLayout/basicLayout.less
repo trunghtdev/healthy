@@ -1,0 +1,26 @@
+.l-basic {
+  &-header {
+    padding-inline: 0px !important;
+  }
+
+  &-footer,
+  &-header {
+    & .ant-menu-submenu-horizontal,
+    &-menu-item {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      background-color: unset !important;
+    }
+  }
+  &-content {
+    
+  }
+  &-footer {
+    background-color: @text-color !important;
+    padding: 0px !important;
+    &-menu-item {
+      padding: 0 22.5px !important;
+    }
+  }
+}

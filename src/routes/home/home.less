@@ -1,0 +1,83 @@
+.p-home {
+  &-block-top {
+
+    &-achievement-rate {
+      font-size: 36px;
+      color: #fff;
+      text-align: center;
+
+      & svg {
+        width: 200px;
+        height: 200px;
+        transform: rotate(-90deg);
+        overflow: initial;
+      }
+
+      & circle {
+        stroke-width: 3px;
+        fill: none;
+      }
+
+      & circle:nth-child(1) {
+        stroke: white
+      }
+
+      &:nth-child(1) {
+        stroke-position: inside;
+      }
+
+      & div {
+        position: relative;
+      }
+
+      & span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 40px;
+      }
+    }
+
+    &-content {
+      height: 315px;
+      background-image: url(../../assets/images/d01.jpg);
+      background-size: auto;
+      background-position: center;
+    }
+  }
+
+  &-block-mid {
+    padding-block: 25px;
+    &-foodtimeline {
+      &-item {
+        position: relative;
+        height: 116px;
+        width: 134px;
+        & > svg {
+          position: absolute;
+        }
+      }
+    }
+  }
+  
+  &-block-bottom {
+    &-mealhistory-label {
+      background-color: @primary-color-300;
+      height: fit-content;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding-inline: 4px;
+      margin-left: 4px;
+      & .ant-typography {
+        color: white;
+      }
+    }
+  }
+
+  &-block-actions {
+    padding-block: 25px;
+  }
+}
