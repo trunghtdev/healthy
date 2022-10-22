@@ -20,15 +20,7 @@ const BasicLayout: FC<any> = ({ children }) => {
       <Footer className='l-basic-footer'>
         <AppFooter />
       </Footer>
-      <BackTop
-        style={{
-          height: 48,
-          width: 48,
-          right: 400,
-          bottom: 150
-        }}
-        visibilityHeight={0}
-      >
+      <BackTop>
         <BackTopIcon />
       </BackTop>
     </Layout>

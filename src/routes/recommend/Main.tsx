@@ -5,7 +5,9 @@ const { Text } = Typography
 const Main = () => {
   return (
     <Row
-      gutter={32}
+      align='middle'
+      justify='center'
+      gutter={[32, 32]}
       className='p-recommend-main-wrapper'
     >
       {[

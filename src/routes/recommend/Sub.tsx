@@ -55,7 +55,8 @@ const data = [
 
 const Sub = () => {
   return (
-    <Row gutter={[8, 8]} className='p-recommend-sub-wrapper'>
+    <Row align='middle'
+    justify='center' gutter={[8, 8]} className='p-recommend-sub-wrapper'>
       {data.map(item => {
         return (
           <Col className='p-recommend-sub-item'>

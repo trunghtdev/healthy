@@ -1,14 +1,11 @@
 import { Suspense } from 'react'
-import BasicLayout from './layouts/BasicLayout';
 
 import AppRoutes from './routes'
 
 function App() {
   return (
     <Suspense fallback={<>loading...</>}>
-      <BasicLayout>
-        <AppRoutes />
-      </BasicLayout>
+      <AppRoutes />
     </Suspense>
   );
 }

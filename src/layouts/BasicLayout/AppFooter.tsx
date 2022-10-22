@@ -37,11 +37,11 @@ const AppFooter = () => {
   return (
     <Row
       style={{
-        maxWidth: 1280,
+        maxWidth: 1000,
         height: 128,
         marginInline: 'auto',
-        paddingLeft: 137.5,
-        paddingRight: 160
+        paddingLeft: 17.5,
+        paddingRight: 20
       }}
     >
       <Menu
