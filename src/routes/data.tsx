@@ -11,5 +11,9 @@ export const routes: TypeRoute[] = [
   {
     path: '/record',
     Component: lazy(() => import(`./record`))
+  },
+  {
+    path: '/recommend',
+    Component: lazy(() => import(`./recommend`))
   }
 ]

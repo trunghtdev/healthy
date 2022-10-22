@@ -1,5 +1,7 @@
-import { Layout, Menu } from 'antd';
+import { Layout, BackTop } from 'antd';
 import { FC } from 'react';
+
+import {  ReactComponent as BackTopIcon } from '../../assets/icons/back-top.svg'
 
 import AppHeader from './AppHeader';
 import AppFooter from './AppFooter';
@@ -18,6 +20,17 @@ const BasicLayout: FC<any> = ({ children }) => {
       <Footer className='l-basic-footer'>
         <AppFooter />
       </Footer>
+      <BackTop
+        style={{
+          height: 48,
+          width: 48,
+          right: 400,
+          bottom: 150
+        }}
+        visibilityHeight={0}
+      >
+        <BackTopIcon />
+      </BackTop>
     </Layout>
   )
 }

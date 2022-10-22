@@ -28,30 +28,23 @@ const Entries = () => {
             key={item.title}
           >
             <Row
-              style={{
-                border: '24px solid #FFCC21',
-                backgroundColor: '#2E2E2E',
-                position: 'relative'
-              }}
+              className="p-entries-recommend-item"
             >
               <Col
-                style={{
-                  position: 'absolute',
-                  width: '100%',
-                  height: '100%',
-                  zIndex: 1
-                }}
+                className="p-entries-recommend-item-top"
               >
                 <Row style={{ width: '100%', height: '100%' }} align='middle' justify='center'>
                   <Col>
                     <Row align='middle' justify='center'>
-                      <Text style={{ color: '#FFCC21', letterSpacing: '0.125px', fontSize: 25 }}>{item.title}</Text>
+                      <Text className="p-entries-recommend-item-title">
+                        {item.title}
+                      </Text>
                     </Row>
                     <Row align='middle' justify='center'>
                       <Button
                         type='primary'
                         size='small'
-                        style={{ minWidth: 160 }}
+                        className="p-entries-recommend-item-subtitle"
                       >
                         {item.subTitle}
                       </Button>
@@ -60,23 +53,13 @@ const Entries = () => {
                 </Row>
               </Col>
               <Col
+                className="p-entries-recommend-item-bottom"
                 style={{
-                  backgroundImage: `url(${item.image})`,
-                  backgroundSize: 'cover',
-                  backgroundRepeat: 'no-repeat',
-                  mixBlendMode: 'luminosity',
-                  height: 240,
-                  width: 240,
+                  backgroundImage: `url(${item.image})`
                 }}
               >
                 <Row
-                  style={{
-                    mixBlendMode: 'luminosity',
-                    backgroundColor: 'black',
-                    height: 240,
-                    width: 240,
-                    opacity: 0.25
-                  }}
+                  className="p-entries-recommend-item-overlay"
                 >
 
                 </Row>

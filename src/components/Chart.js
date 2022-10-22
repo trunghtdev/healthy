@@ -1,10 +1,13 @@
 import { useState, useEffect, FC } from 'react';
-import { Line } from '@ant-design/plots';
+import { Line, G2 } from '@ant-design/plots';
+import { deepMix } from '@antv/util';
 
 const DemoLine = (props) => {
-  const { height, width, ...restProps } = props
+  const { height, width, theme, ...restProps } = props
   const [data, setData] = useState([]);
-
+  
+  const darkTheme = G2.getTheme('dark');
+  
   useEffect(() => {
     asyncFetch();
   }, []);
@@ -17,9 +20,9 @@ const DemoLine = (props) => {
         console.log('fetch data failed', error);
       });
   };
-
+  // #414141
   const config = {
-    theme: 'dark',
+    theme: deepMix({}, darkTheme, theme || {}),
     appendPadding: [20, 20, 20, 20],
     xField: 'year',
     data,

@@ -1,0 +1,234 @@
+.p-entries {
+
+  &-actions,
+  &-exercise,
+  &-record,
+  &-my-diary,
+  &-recommend {
+    margin-top: 56px;
+  }
+
+  &-recommend {
+    &-item {
+      border: 24px solid @primary-color-300;
+      background-color: @dark-600;
+      position: relative;
+
+      &-top {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+
+      &-bottom {
+        background-size: cover;
+        background-repeat: no-repeat;
+        mix-blend-mode: luminosity;
+        height: 240px;
+        width: 240px;
+      }
+
+      &-title {
+        color: @primary-color-300;
+        letter-spacing: 0.125px;
+        font-size: 25px;
+      }
+
+      &-subtitle {
+        min-width: 160px;
+      }
+
+      &-overlay {
+        mix-blend-mode: luminosity;
+        background-color: black;
+        height: 240px;
+        width: 240px;
+        opacity: 0.25;
+      }
+    }
+  }
+
+  &-record {
+
+    &-subtitle,
+    &-title {
+      color: @white;
+      font-weight: 400;
+      display: block;
+    }
+
+    &-title {
+      font-size: 15px;
+      letter-spacing: 0.15px;
+      width: 60px;
+    }
+
+    &-subtitle {
+      font-size: 22px;
+      letter-spacing: 0.11px;
+      line-height: 27px;
+    }
+
+    &-wrapper {
+      position: relative;
+    }
+
+    &-content {
+      position: absolute;
+      z-index: 1;
+      top: 0px;
+      left: 0px;
+      padding-top: 10px;
+      padding-left: 40px;
+    }
+
+    &-footer {
+      position: absolute;
+      z-index: 1;
+      bottom: 0px;
+      left: 0px;
+      padding-bottom: 10px;
+      padding-left: 40px;
+
+      &-item {
+        width: 56px;
+        height: 24px;
+        background-color: #FFCC21;
+        border-radius: 24px;
+        color: white;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 300;
+
+        &-selected {
+          color: #FFCC21;
+          background-color: @white;
+        }
+      }
+    }
+  }
+
+  &-exercise {
+    &-wrapper {
+      position: relative;
+      height: 264px;
+      width: 100%;
+      background-color: @dark-500;
+      padding-top: 60px;
+      padding-left: 40px;
+      padding-right: 24px;
+      padding-bottom: 24px;
+    }
+
+    &-content {
+      overflow: auto;
+      height: 100%;
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+ */
+      position: relative;
+
+      /* Firefox */
+      scrollbar-width: thin;
+      scrollbar-color: @primary-color-300 @gray-400;
+
+      /* Safari and Chrome */
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: @primary-color-300;
+        border-radius: 3px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: @gray-400;
+        border-radius: 3px;
+      }
+
+      // mozilla Browser
+      &::-moz-scrollbar {
+        width: 6px;
+      }
+
+      &::-moz-scrollbar-thumb {
+        background: @primary-color-300;
+        border-radius: 3px;
+      }
+
+      &::-moz-scrollbar-track {
+        background: @gray-400;
+        border-radius: 3px;
+      }
+    }
+
+    &-title-wrapper {
+      position: absolute;
+      z-index: 1;
+      top: 0px;
+      left: 0px;
+      padding-top: 10px;
+      padding-left: 40px;
+    }
+
+    &-subtitle,
+    &-title {
+      color: @white;
+      font-weight: 400;
+      display: block;
+    }
+
+    &-title {
+      font-size: 15px;
+      letter-spacing: 0.15px;
+      width: 63px;
+    }
+
+    &-subtitle {
+      font-size: 22px;
+      letter-spacing: 0.11px;
+      line-height: 27px;
+    }
+  }
+
+  &-my-diary {
+    &-wrapper {}
+
+    &-title {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0.11px;
+    }
+
+    &-item {
+      padding: 16px;
+      border: 2px solid #707070;
+      width: 231px;
+      height: 231px;
+
+      &-time {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.09px;
+      }
+
+      &-title {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0.06px;
+      }
+
+      &-content {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0.06px;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import '~antd/dist/antd.less';
+
+.ant-btn-primary:is(.ant-btn-primary-with-linear-gradient) {
+  background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
+  border-width: 0px;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
+  }
+
+  // border-image: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
+}
+
+.p-common-block {
+  max-width: 960px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+// <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+// <path d="M2 2L21 21" stroke="#FF963C" stroke-width="3"/>
+// </svg>
+
+
+.p-header-dropdown-menu {
+  top: 42px !important;
+  width: 280px;
+  &-item {
+    padding: 23px 0px 23px 32px;
+    &-text {
+      color: @white;
+    }
+
+    &-div_top,
+    &-div_bottom {
+      margin: 0px !important;
+      mix-blend-mode: normal;
+      
+    }
+
+    &-div_top { 
+      border-color: @white;
+      opacity: 0.15;
+    }
+
+    &-div_bottom { 
+      border-color: @dark-600;
+      opacity: 0.25;
+    }
+  }
+  & .ant-dropdown-menu {
+    border-radius: 0px;
+    padding: 0px !important;
+    background-color: @gray-400;
+    &-item {
+      padding: 0px; //23px 0px 23px 32px;
+      &:hover {
+        background-color: @gray-400 !important;
+      }
+    }
+  }
+  & .ant-dropdown-arrow {
+    height: 32px;
+    width: 32px;
+    transform: unset;
+    top: -17px;
+    right: 0px;
+    &::before {
+      content: url(../assets/icons/close-menu.svg);
+      background-repeat: unset !important;
+      background-position: unset !important;
+      top: unset !important;
+      left: unset !important;
+      width: 32px !important;
+      height: 32px !important;
+      background: @dark-500 !important;
+      clip-path: unset !important;
+    }
+  }
+}

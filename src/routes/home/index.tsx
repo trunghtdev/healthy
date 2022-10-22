@@ -1,23 +1,27 @@
 import { Row, Col, Button } from 'antd';
 
-import './home.less'
-
 import AchievementRate from './AchievementRate';
 import FoodTimeLine from './FoodTimeLine';
 import MealHistory from './MealHistory';
 import Chart from '../../components/Chart';
 
+import backgroundImageAchievementRate from '../../assets/images/d01.jpg'
+
 const Home = () => {
   return (
     <Col className='p-home'>
       <Row className='p-home-block-top'>
-        <Col className='p-home-block-top-content' span={10}>
+        <Col
+          style={{ backgroundImage: `url(${backgroundImageAchievementRate})` }}
+          className='p-home-block-top-content' 
+          span={10}
+        >
           <Row style={{ height: '100%' }} align='middle' justify='center'>
             <AchievementRate />
           </Row>
         </Col>
         <Col span={14}>
-          <Chart />
+          <Chart theme={{ background: '#2E2E2E' }} />
         </Col>
       </Row>
       <Row gutter={[50, 50]} align="middle" justify='center' className='p-home-block-mid p-common-block'>

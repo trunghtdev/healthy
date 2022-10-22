@@ -1,11 +1,10 @@
-import { Row, Col, Menu, MenuProps, Button } from 'antd'
-import { useNavigate } from 'react-router'
+import { Row, Col, Menu, MenuProps, Button, Dropdown } from 'antd'
 
 import { ReactComponent as Logo } from '../../assets/images/logo.svg'
 import { ReactComponent as EditIcon } from '../../assets/icons/nav/edit.svg'
 import { ReactComponent as MedalIcon } from '../../assets/icons/nav/medal.svg'
 import { ReactComponent as NotiIcon } from '../../assets/icons/nav/noti.svg'
-import { ReactComponent as MenuIcon } from '../../assets/icons/nav/menu.svg'
+import DropdownMenu from './DropdownMenu'
 
 const AppHeader = () => {
   // const navigate = useNavigate()
@@ -55,7 +54,7 @@ const AppHeader = () => {
           </Col>
           <Col>
             <Row>
-              <Button type='link' icon={<MenuIcon />} />
+              <DropdownMenu />
             </Row>
           </Col>
         </Row>

@@ -3,8 +3,6 @@ import BasicLayout from './layouts/BasicLayout';
 
 import AppRoutes from './routes'
 
-import './App.less'
-
 function App() {
   return (
     <Suspense fallback={<>loading...</>}>
